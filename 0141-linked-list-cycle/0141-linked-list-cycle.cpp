@@ -10,13 +10,12 @@ class Solution {
 public:
     bool hasCycle(ListNode *head) {
         unordered_map<ListNode*,int> x;
-        ListNode* temp=head;
         if(head==0)
             return false;
-        for(int i=0;temp->next!=NULL;i++){
-            x[temp->next]++;
-            temp=temp->next;
-            if(x[temp->next]==1)
+        for(int i=0;head->next!=NULL;i++){
+            x[head->next]++;
+            head=head->next;
+            if(x[head->next]==1)
                 return true;
         }
         return false;

@@ -1,7 +1,16 @@
 class Solution {
 public:
     int addDigits(int num) {
-	if ( num == 0 ) return 0;
-	return num%9 == 0 ? 9 : num%9 ;
-}
+        int c=0,sum=10;
+        while(sum>9){
+            sum=0;
+            while(num){
+                sum+=num%10;
+                num/=10;
+            }
+            num=sum;
+        }  
+    if(num<=9)return num;
+        return 0;
+    }
 };

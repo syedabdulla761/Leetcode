@@ -18,8 +18,7 @@ public:
             x.push_back(head->val);
             head=head->next;
         }
-        int mid=x.size()/2;
-        for(int i=0;i<mid;i++){
+        for(int i=0;i<x.size()/2;i++){
             ans=ans->next;
         }
         return ans;

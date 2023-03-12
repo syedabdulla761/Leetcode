@@ -6,7 +6,6 @@ public class Solution {
             nums[i]=num;
             i++;
         }
-        Array.Resize(ref nums,set.Count);
-        return nums.Length;
+        return set.Count;
     }
 }

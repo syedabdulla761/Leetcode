@@ -1,6 +1,6 @@
 public class Solution {
     public string LongestCommonPrefix(string[] strs) {
-        string ans="";
+       string ans="";
         int i=0;
         for(int j=0;j<strs[0].Length;j++){
             for(i=0;i<strs.Length-1;i++){

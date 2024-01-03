@@ -15,7 +15,6 @@ class Solution {
             else{
                 list.add(list.get(list.size()-1)+list.get(list.size()-2));
             }
-            System.out.println(list);
         }
         int sum=0;
         

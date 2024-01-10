@@ -19,9 +19,6 @@ class Solution {
                 else return false;
                 twenties+=20;
             }
-            System.out.println(i+"-bill fives:"+fives);
-            System.out.println(i+"-bill tens:"+tens);
-            
             }
         if( fives<0 || tens<0 || twenties<0)return false;
         return true;
